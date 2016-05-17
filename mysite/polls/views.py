@@ -96,7 +96,7 @@ def index(request):
     <p>
         Django makes it easier to build better Web apps more quickly and with less code.
     </p>
-	<p><em>Look, how simple Django has made such progress. The simpler the better.</em><br/> 
+	<p><em>Look, how simple Django has made such progress. <br/>However, complexity is somehow useful in some circumstances.</em><br/> 
 	<div style="width:500px; margin:0 auto"><h2 align= "right"><i>-- stephen</i></h2></div></p>
     <p>
         <a href="https://www.djangoproject.com/start/" class="cta">Get started with Django</a>
