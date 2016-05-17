@@ -24,7 +24,7 @@ def index(request):
     <meta name="msapplication-TileColor" content="#113228">
     <meta name="msapplication-TileImage" content="https://www.djangoproject.com/s/img/icon-tile.b01ac0ef9f67.png">
 
-    <title>The Web framework for perfectionists with deadlines | Django</title>
+    <title>My Django site from scratch</title>
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://www.djangoproject.com/s/css/output-ie.1b9cf0397c55.css" >
@@ -96,7 +96,7 @@ def index(request):
     <p>
         Django makes it easier to build better Web apps more quickly and with less code.
     </p>
-	<p><em>Look, how simple Django has made such progress. The simpler the better.</em><br/> 
+	<p><em>Look, how simple Django has made such progress. <br/>However, complexity is somehow useful in some circumstances.</em><br/> 
 	<div style="width:500px; margin:0 auto"><h2 align= "right"><i>-- stephen</i></h2></div></p>
     <p>
         <a href="https://www.djangoproject.com/start/" class="cta">Get started with Django</a>
