@@ -24,7 +24,7 @@ def index(request):
     <meta name="msapplication-TileColor" content="#113228">
     <meta name="msapplication-TileImage" content="https://www.djangoproject.com/s/img/icon-tile.b01ac0ef9f67.png">
 
-    <title>The Web framework for perfectionists with deadlines | Django</title>
+    <title>My Django site from scratch</title>
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://www.djangoproject.com/s/css/output-ie.1b9cf0397c55.css" >
