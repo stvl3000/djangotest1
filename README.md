@@ -6,6 +6,6 @@ It is currently built based on Django framework, learned and built from scratch.
 "./admin" is the included sample page.
 This project will be kept continue developing.
 
-Should you have any interest or suggestion, you are more than welcome to keep watching it and informing me.
+Should you have any interest or suggestion, you are more than welcome to keep watching it or informing me.
 
 Thank you.
