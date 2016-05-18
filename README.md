@@ -10,7 +10,7 @@ And I got a test server up and running on Amazon today.  Your are more than welc
  
   http://ec2-54-164-233-102.compute-1.amazonaws.com/polls/
  
-Built 7 only got 1 working after rebuilt several times. It seems AWS was quite unstable, and the community virtual machine were not certified, means some components need to be built from source code.
+Built 7 only got 1 working after rebuilt several times. The community virtual machine were not certified, means some components need to be built from source code.
 
 Should you have any interest or suggestion, you are more than welcome to keep watching it or informing me.
 
