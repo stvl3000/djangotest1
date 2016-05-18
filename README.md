@@ -6,6 +6,12 @@ It is currently built based on Django framework, learned and built from scratch.
 "./admin" is the included sample page.
 This project will be kept continue developing.
 
+And I got a test server up and running on Amazon today.  Your are more than welcome to visit it at
+ 
+  http://ec2-54-164-233-102.compute-1.amazonaws.com/polls/
+ 
+Built 7 only got 1 working after rebuilt several times. It seems AWS was quite unstable, and the community virtual machine were not certified, means some components need to be built from source code.
+
 Should you have any interest or suggestion, you are more than welcome to keep watching it or informing me.
 
 Thank you.
