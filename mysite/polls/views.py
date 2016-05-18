@@ -4,9 +4,13 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
+from django.template import RequestContext
+
 
 def index(request):
-	return HttpResponse("""<!DOCTYPE html><html lang="en" class=" mdzr-js mdzr-borderradius mdzr-boxshadow mdzr-cssanimations mdzr-svg"><head>
+	resultstring = "flowers"
+	
+	htmlstring = """<!DOCTYPE html><html lang="en" class=" mdzr-js mdzr-borderradius mdzr-boxshadow mdzr-cssanimations mdzr-svg"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -93,19 +97,31 @@ def index(request):
       <div class="container">
         
     <h1 class="visuallyhidden">Django</h1>
-    <p>
-        Django makes it easier to build better Web apps more quickly and with less code.
-    </p>
-	<p><em>Look, how simple Django has made such progress. <br/>However, complexity is somehow useful in some circumstances.</em><br/> 
-	<div style="width:500px; margin:0 auto"><h2 align= "right"><i>-- stephen</i></h2></div></p>
-    <p>
-        <a href="https://www.djangoproject.com/start/" class="cta">Get started with Django</a>
-    </p>
+	<p><em>Look, how good Django has made. Let's have fun first. </em></p>
+	
+<style type="text/css">
+.listicons {width: 30px; margin: 5px }
+</style>	
+	
+<div align="center">
+<div style="max-width:600px; margin:auto">	
+
+<form action="" method="POST">
+
+      <input type="hidden" name="title" value="submit">
+      <p><h2>What's your name: <input type="text" name="name" value="" size="10"></h2><br/><h2>How many lovely hearts do you see:? </h2><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/unfilled.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/square.jpg"><img class="listicons" src="/static/filled.jpg"><img class="listicons" src="/static/flower.jpg"><img class="listicons" src="/static/heart.jpg"><img class="listicons" src="/static/filled.jpg"><br/><h2>Answer: <input type="text" name="answer" value="" size="10"></br><input type="Submit" value="Submit" disabled></h2>Sorry, I'm not ready this moment. (-_-)"
+    </p></form>
+</div>
+</div>
     
 
       </div>
     </div>
-    <div id="billboard"></div>
+    <div id="billboard">
+
+
+	
+	</div>
 
     <div class="container sidebar-right">
       <div role="main">
@@ -431,5 +447,9 @@ def index(request):
 
   
 
-</body></html>""")
-	
+</body></html>""" 
+
+
+
+
+	return HttpResponse( htmlstring )
