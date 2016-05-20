@@ -6,11 +6,13 @@ It is currently built based on Django framework, learned and built from scratch.
 "./admin" is the included sample page.
 This project will be kept continue developing.
 
-And I got a test server up and running on Amazon today.  Your are more than welcome to visit it at
+I built a free Red Hat Enterprise Linux server to run this hello world project. Your are more than welcome to visit it at a new URL:
+  
+  http://ec2-52-207-252-146.compute-1.amazonaws.com/polls/
  
-  http://ec2-54-164-233-102.compute-1.amazonaws.com/polls/
- 
-Built 7 only got 1 working after rebuilt several times. The community virtual machine were not certified, means some components need to be built from source code.
+The previous CentOS server was accidentally built on an chargeable virtual manchine, even the RHEL one has double memory since it is an AWS official recommendation. 
+
+Hereby the old URL will become invalide after 21 May permanently. Appology for that.
 
 Should you have any interest or suggestion, you are more than welcome to keep watching it or informing me.
 
